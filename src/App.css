@@ -1,0 +1,95 @@
+.page {
+}
+
+.page>h1{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input>input{
+  padding-left: 5px;
+  width: 250px;
+  height: 30px;
+  border: 2px solid rgb(74, 74, 127);
+}
+
+.input>button{
+  cursor: pointer;
+  margin: 15px;
+  padding: 3px;
+  height: 30px;
+  width: 70px;
+  background-color: #3764BE;
+  color : white;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%; /* Ensures images take full width of their container */
+  max-width: 300px; /* Limits maximum width to 300 pixels */
+  height: auto; /* Maintains aspect ratio */
+  margin: 5px;
+  box-sizing: border-box; /* Includes padding and border in the width and height of the elements */
+}
+
+
+datalist {
+  /* border: 5px solid red; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* padding: 2px 30px 2px 2px; */
+  border: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .image-container img {
+    max-width: 200px; /* Adjust the maximum width for smaller screens */
+  }
+
+  .input{
+    height: 45px;
+  }
+  
+  .input>input{
+    padding-left: 4px;
+    width: 200px;
+    height: 30px;
+  }
+  
+  .input>button{
+    margin: 10px;
+    padding: 3px;
+    height: 30px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container img {
+    max-width: 150px; /* Further reduce the maximum width for smaller screens */
+  }
+}
