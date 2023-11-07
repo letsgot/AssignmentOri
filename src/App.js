@@ -123,9 +123,9 @@ const App = () => {
     }
     else{
       // Removing the specified element from the array 
-      let spliced = arr.splice(found, 1);
+      arr.splice(found, 1);
       // arr = spliced;
-      console.log(arr);
+      // console.log(arr);
       arr.unshift(d);
     }
     
